@@ -10,7 +10,7 @@ packages = [{include = "steak_protocol"}]
 python = ">=3.10, <3.12"
 opshin = "^0.21.1"
 fire = "^0.5.0"
-pycardano = {git = "https://github.com/steak-dev/pycardano", rev = "running_fixes"}
+pycardano = {git = "https://github.com/imperatorlang/pycardano", rev = "fix/withdrawal_fix"}
 peewee = "^3.17.1"
 ogmios = "^1.0.6"
 fastapi = "^0.109.2"
