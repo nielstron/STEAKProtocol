@@ -955,13 +955,13 @@ pyreadline3 = {version = "*", markers = "sys_platform == \"win32\" and python_ve
 
 [[package]]
 name = "hypothesis"
-version = "6.102.1"
+version = "6.102.4"
 description = "A library for property-based testing"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "hypothesis-6.102.1-py3-none-any.whl", hash = "sha256:90bbdc3aa6d90ca349a9a257793e66cafdea03a44bbb8dad940d2618b92acc5b"},
-    {file = "hypothesis-6.102.1.tar.gz", hash = "sha256:ba1d6fd8369faa9adf19b1bfee60bceaa9eba165d7b3815df6a271cb75d41797"},
+    {file = "hypothesis-6.102.4-py3-none-any.whl", hash = "sha256:013df31b04a4daede13756f497e60e451963d86f426395a79f99c5d692919bbd"},
+    {file = "hypothesis-6.102.4.tar.gz", hash = "sha256:59b4d144346d5cffb482cc1bafbd21b13ff31608e8c4b3e4630339aee3e87763"},
 ]
 
 [package.dependencies]
@@ -1163,10 +1163,8 @@ version = "1.0.6"
 description = "Ogmios is a lightweight bridge interface for cardano-node. It offers a WebSockets API that enables local clients to speak Ouroboros' mini-protocols via JSON/RPC. ogmios-python is an Ogmios client written in Python designed for ease of use."
 optional = false
 python-versions = ">=3.10"
-files = [
-    {file = "ogmios-1.0.6-py3-none-any.whl", hash = "sha256:536be82ccea0111feaf20ac1b583457562d58c9f1796e4422d57c494ce0e5a11"},
-    {file = "ogmios-1.0.6.tar.gz", hash = "sha256:fe5113267d7afccaee9bc4449743554375475256e56c45c8ff8b9d3919182163"},
-]
+files = []
+develop = false
 
 [package.dependencies]
 cachetools = "*"
@@ -1180,6 +1178,12 @@ websockets = "*"
 [package.extras]
 dev = ["black", "datamodel-code-generator", "flake8-pyproject", "isort", "sphinx", "sphinx-rtd-theme"]
 testing = ["coverage[toml] (>=6.5)", "pytest"]
+
+[package.source]
+type = "git"
+url = "https://gitlab.com/nielstron/ogmios-python.git"
+reference = "main"
+resolved_reference = "fd416185e43c5f041d75159cc90642693a33298f"
 
 [[package]]
 name = "opshin"
@@ -1429,13 +1433,13 @@ ptyprocess = ">=0.5"
 
 [[package]]
 name = "platformdirs"
-version = "4.2.1"
+version = "4.2.2"
 description = "A small Python package for determining appropriate platform-specific dirs, e.g. a `user data dir`."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "platformdirs-4.2.1-py3-none-any.whl", hash = "sha256:17d5a1161b3fd67b390023cb2d3b026bbd40abde6fdb052dfbd3a29c3ba22ee1"},
-    {file = "platformdirs-4.2.1.tar.gz", hash = "sha256:031cd18d4ec63ec53e82dceaac0417d218a6863f7745dfcc9efe7793b7039bdf"},
+    {file = "platformdirs-4.2.2-py3-none-any.whl", hash = "sha256:2d7a1657e36a80ea911db832a8a6ece5ee53d8de21edd5cc5879af6530b1bfee"},
+    {file = "platformdirs-4.2.2.tar.gz", hash = "sha256:38b7b51f512eed9e84a22788b4bce1de17c0adb134d6becb09836e37d8654cd3"},
 ]
 
 [package.extras]
@@ -2275,4 +2279,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10, <3.12"
-content-hash = "017128d34b325527abfbeca1768a4da53cfe489bf5e9f05c22b3e125759532a8"
+content-hash = "dc142768be496277322a8026110ea247614130c2c627d99c92fcccb8212baa48"

@@ -38,11 +38,20 @@ else:
         context = OgmiosChainContext(ogmios_url, network=network, kupo_url=kupo_url)
     except Exception:
         try:
+            import ssl
+
+            ctx = ssl.create_default_context()
+            ctx.check_hostname = False
+            ctx.verify_mode = ssl.CERT_NONE
+
             context = ogmios.OgmiosChainContext(
                 host=ogmios_host,
                 port=int(ogmios_port),
                 secure=ogmios_protocol == "wss",
                 network=network,
+                connection_kwargs={
+                    "ssl_context": ctx,
+                },
             )
         except Exception as e:
             print("No ogmios available")
